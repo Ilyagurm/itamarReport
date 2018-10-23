@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ENDOPAT FMD TEST REPORT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <section id="total_template">
+        <div class="container">
+            <div class="total_template_container_out">
+                <div class="total_template_container_in">
+                    <div class="top_area">
+                        <div class="logo">
+                            <a href="https://www.itamar-medical.com/"><img src="assets/images/Itamar_Logo_150.png" alt=""></a>
+                        </div>
+                        <div class="web_link">
+                            <a href="https://www.itamar-medical.com/">www.itamar-medical.com</a>
+                        </div>
+                    </div>
+                    <div class="top_area">
+                        <hr>
+                    </div>
+                    <div class="top_area">
+                        <i class="fa fa-user-md"></i>
+                        <h3>ENDOPAT FMD TEST REPORT</h3>
+                    </div>
+                    <div class="content_area">
+                        <div class="table-tesponsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr class="active">
+                                        <td class="test_name">
+                                            ID :
+                                        </td>
+                                        <td>
+                                            ${patient.<wbr />patientIdentification}
+                                        </td>
+                                        <td class="test_name">
+                                            Date of Birth :
+                                        </td>
+                                        <td>
+                                            ${patient.dateOfBirth}
+                                        </td>
+                                        <td class="test_name">
+                                            Previous Test 1 :
+                                        </td>
+                                        <td>
+                                            ${patient.previousTests.test1}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name">
+                                            Height :
+                                        </td>
+                                        <td>
+                                            ${patient.height} cm
+                                        </td>
+                                        <td class="test_name">
+                                            Previous Test 2 :
+                                        </td>
+                                        <td>
+                                            ${patient.previousTests.test2}
+                                        </td>
+                                    </tr>
+                                    <tr class="active">
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name">
+                                            Weight :
+                                        </td>
+                                        <td>
+                                            ${patient.weight} kg
+                                        </td>
+                                        <td class="test_name">
+                                            Previous Test 3 :
+                                        </td>
+                                        <td>
+                                            ${patient.previousTests.test3}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name">
+                                            Previous Test 4 :
+                                        </td>
+                                        <td>
+                                            ${patient.previousTests.test4}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="content_area">
+                        <div class="table-tesponsive">
+                            <table class="table table-bordered test_name2_table">
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name2">
+                                            LnRHI
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name2">
+                                            Diastolic BP
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name2">
+                                            Systolic BP
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td class="test_name2">
+                                            Heart Rate
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            ${patient.lnRHI}
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            ${patient.diaBp}
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            ${patient.sysBp}
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            ${patient.heartRate}
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="content_area">
+                        <img src="https://via.placeholder.com/910x200?text=910x300! - Image1" alt="image1.png">
+                    </div>
+                    <div class="content_area">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr class="info text-center">
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        BASELINE ($TS_BL_TM)
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        OCCLUSION ($TS_OCC_TM)
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        DILATATION ($TS_DIL_TM)
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content_area">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr class="info text-center">
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        BASELINE ${patient.baselineTime} OCCLUSION ($TS_OCC_TM) DILATATION ($TS_DIL_TM)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="content_area">
+                        <img src="https://via.placeholder.com/910x200?text=910x300! - image2" alt="image2.png">
+                    </div>
+
+                    <div class="content_area">
+                        <br>
+                        <br> Thank you for your attention.
+
+                        <br>
+                        <br>
+                        <h4>Physician:</h4>
+                        ${patient.physicianName} Siganture:__________________
+
+
+                        <br>
+                        <br>
+                        <h4>Framingham Risk Score</h4>
+                        The Framingham Risk Score estimates the risk of developing hard CHD outcomes (myocardial infarction or coronary death) over a course of 10 years.
+
+                        <br>
+                        <br> The risk is given in percentages. The Framingham Risk Score applies only to people without known heart disease or diabetes.
+
+                        <br>
+                        <br> For more information, visit <a href="http://www.framinghamheartstudy.org/risk/hrdcoronary.html">http://www.framinghamheartstudy.org/risk/hrdcoronary.html</a>
+
+                        <br>
+                        <br>
+                        <h4 class="text-center"> Risk Factors Calculation Inputs</h4>
+
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr class="info text-center">
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        Age
+                                    </td>
+                                    <td>
+                                        Gender
+                                    </td>
+                                    <td>
+                                        >20%
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="active text-center">
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        ${patient.age}
+                                    </td>
+                                    <td>
+                                        ${patient.gender}
+                                    </td>
+                                    <td>
+                                        ${patient.tsLowRisk}
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="content_area">
+                        <h2 class="text-center"> ENDOPAT FMD TEST REPORT</h2>
+                        <img src="https://via.placeholder.com/910x300?text=910x300! - Image 3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+
+</html>
